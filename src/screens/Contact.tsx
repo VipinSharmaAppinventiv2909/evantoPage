@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './contact';
+import styles from './contactStyles';
 
 export default function Contact() {
   const classes = styles();

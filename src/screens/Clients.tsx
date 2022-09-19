@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './client';
+import styles from './clientStyles';
 
 export default function Clients() {
   const classes = styles();

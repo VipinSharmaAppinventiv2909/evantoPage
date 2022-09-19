@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './google';
+import styles from './googleStyles';
 
 export default function GoogleMaps() {
   const classes = styles();

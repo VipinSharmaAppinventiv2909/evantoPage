@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './portfolio';
+import styles from './portfolioStyles';
 
 export default function Portfolio() {
   const classes = styles();

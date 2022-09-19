@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './creativity';
+import styles from './creativityStyles';
 
 export default function Creative() {
   const classes = styles();

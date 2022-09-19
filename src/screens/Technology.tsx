@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './technology';
+import styles from './technologyStyles';
 
 export default function Technology() {
   const classes = styles();
