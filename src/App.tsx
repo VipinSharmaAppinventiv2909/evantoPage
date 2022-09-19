@@ -1,24 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './screens/Header';
 import './App.css';
+import Home from './screens/Home';
+import About from './screens/About';
+import Description from './screens/Description';
+import TeamDesc from './screens/TeamDesc';
+import StyleOptions from './screens/StyleOptions';
+import Services from './screens/Services';
+import NewsTeller from './screens/NewsTeller';
+import Clients from './screens/Clients';
+import Technology from './screens/Technology';
+import Portfolio from './screens/Portfolio';
+import Creative from './screens/Creativity';
+import Number from './screens/Number';
+import Contact from './screens/Contact';
+import GoogleMaps from './screens/GoogleMaps';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div
+        style={{
+          height: '100%',
+          padding: '0px',
+          margin: '0px',
+          overflow: 'hidden',
+        }}
+      >
+        <Header />
+        <Home />
+        <About />
+        <Description />
+        <TeamDesc />
+        <NewsTeller />
+        <Services />
+        <Clients />
+        <Technology />
+        <Creative />
+        <Portfolio />
+        <Number />
+        <Contact />
+        <GoogleMaps />
+        <StyleOptions />
+      </div>
     </div>
   );
 }
