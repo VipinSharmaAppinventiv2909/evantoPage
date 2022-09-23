@@ -1,25 +1,28 @@
 import { makeStyles, createStyles } from '@mui/styles';
+import { Theme } from '@mui/material';
 
-export default makeStyles(() =>
+export default makeStyles((theme: Theme) =>
   createStyles({
     headerContainer: {
       fontSize: '12px',
       width: '100%',
       height: '54px',
-      backgroundColor: '#262626',
+      // backgroundColor: '#262626',
       zIndex: 100,
       lineHeight: '54px',
       marginBottom: '1px',
       position: 'fixed',
-      //   position: 'absolute',
     },
     evantoLogo: {
       float: 'left',
       padding: '0 20px',
+      cursor: 'pointer',
+      [theme.breakpoints.down('md')]: {
+        padding: '0 10px',
+      },
       marginTop: '15px !important',
       '& a': {
         display: 'inline-block',
-        // position: 'absolute',
         top: '18px',
         height: '18px',
         width: '152px',
@@ -37,11 +40,13 @@ export default makeStyles(() =>
     buyNowButton: {
       display: 'inline-block',
       padding: '0 20px',
+      cursor: 'pointer',
+      [theme.breakpoints.down('md')]: {
+        padding: '0 10px',
+      },
     },
 
     butNowButtonLink: {
-      //   boxShadow: '#6f9a34',
-      //   position: 'relative',
       background: '#82b440',
       textDecoration: 'none',
       fontSize: '14px',

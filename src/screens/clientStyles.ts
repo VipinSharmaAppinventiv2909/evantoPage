@@ -1,6 +1,7 @@
 import { makeStyles, createStyles } from '@mui/styles';
+import { Theme } from '@mui/material';
 
-export default makeStyles(() =>
+export default makeStyles((theme: Theme) =>
   createStyles({
     container: {
       width: '80%',
@@ -12,10 +13,7 @@ export default makeStyles(() =>
       width: '55%',
       margin: '0 auto',
       marginBottom: '60px',
-      //   letterSpacing: '1.5',
-      //   color: '#999999',
-      //   opacity: '0.9',
-      //   fontWeight: 'light',
+
       '& h1': {
         fontSize: '36px',
         letterSpacing: '3px',
@@ -38,6 +36,16 @@ export default makeStyles(() =>
       display: 'flex',
       justifyContent: 'space-around',
       alignItems: 'center',
+      [theme.breakpoints.down('md')]: {
+        flexWrap: 'wrap',
+      },
+    },
+
+    imageStyle: {
+      [theme.breakpoints.down('md')]: {
+        flexBasis: '20%',
+        marginTop: '16px',
+      },
     },
     thanksHeading: {
       color: '#222222',
@@ -47,6 +55,12 @@ export default makeStyles(() =>
       textAlign: 'center',
       fontWeight: '400',
       fontFamily: 'Montserrat, sans-serrif',
+      [theme.breakpoints.down('md')]: {
+        fontSize: '26px',
+      },
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '22px',
+      },
     },
     authorName: {
       fontSize: '14px',

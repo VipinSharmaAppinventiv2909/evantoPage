@@ -1,4 +1,6 @@
 import React from 'react';
+import { ThemeProvider } from '@mui/styles';
+import { createTheme } from '@mui/system';
 import Header from './screens/Header';
 import './App.css';
 import Home from './screens/Home';
@@ -17,33 +19,36 @@ import Contact from './screens/Contact';
 import GoogleMaps from './screens/GoogleMaps';
 
 function App() {
+  const theme = createTheme();
   return (
-    <div className="App">
-      <div
-        style={{
-          height: '100%',
-          padding: '0px',
-          margin: '0px',
-          overflow: 'hidden',
-        }}
-      >
-        <Header />
-        <Home />
-        <About />
-        <Description />
-        <TeamDesc />
-        <NewsTeller />
-        <Services />
-        <Clients />
-        <Technology />
-        <Creative />
-        <Portfolio />
-        <Number />
-        <Contact />
-        <GoogleMaps />
-        <StyleOptions />
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <div
+          style={{
+            height: '100%',
+            padding: '0px',
+            margin: '0px',
+            overflow: 'hidden',
+          }}
+        >
+          <Header />
+          <Home />
+          <About />
+          <Description />
+          <TeamDesc />
+          <NewsTeller />
+          <Services />
+          <Clients />
+          <Technology />
+          <Creative />
+          <Portfolio />
+          <Number />
+          <Contact />
+          <GoogleMaps />
+          <StyleOptions />
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   );
 }
 

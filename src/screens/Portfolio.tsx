@@ -5,12 +5,12 @@ export default function Portfolio() {
   const classes = styles();
   return (
     <>
-      <div style={{ width: '100vw', height: '100vh' }}>
+      <div style={{ width: '100vw' }}>
         <div className={classes.container}>
           <div className={classes.sectionTitle}>
             <h1>PORTFOLIO</h1>
             <span className={classes.border}></span>
-            <p style={{ fontSize: '14px', color: '#999999' }}>
+            <p className={classes.paraText}>
               We help build products from idea to launch. We're experts at web &
               mobile design, branding, iOS development & frontend. Here's some
               of our work.

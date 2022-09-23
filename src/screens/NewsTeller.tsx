@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTheme } from '@mui/material';
 
 export default function NewsTeller() {
+  const theme = useTheme();
+
   return (
     <>
       <div style={{ width: '100vw', height: '100vh', position: 'relative' }}>
@@ -15,9 +18,32 @@ export default function NewsTeller() {
               textAlign: 'center',
               justifyContent: 'space-between',
               paddingTop: '20px',
+              [theme.breakpoints.down('md')]: {
+                width: '80%',
+                marginLeft: '10%',
+                marginRight: '10%',
+              },
+              [theme.breakpoints.down('sm')]: {
+                width: '90%',
+                marginLeft: '5%',
+                marginRight: '5%',
+              },
             }}
           >
-            <div style={{ height: '50px', fontSize: '36px', color: 'white' }}>
+            <div
+              style={{
+                height: '50px',
+                fontSize: '36px',
+                color: 'white',
+                [theme.breakpoints.down('md')]: {
+                  // padding: '5px',
+                  fontSize: '27px',
+                },
+                [theme.breakpoints.down('sm')]: {
+                  fontSize: '18px',
+                },
+              }}
+            >
               ENTER YOUR E-MAIL
             </div>
             <div
@@ -28,6 +54,14 @@ export default function NewsTeller() {
                 // textAlign: 'center',
                 color: '#fff',
                 padding: '10px 10px 10px 10px',
+                [theme.breakpoints.down('md')]: {
+                  padding: '5px',
+                  fontSize: '12px',
+                },
+                [theme.breakpoints.down('sm')]: {
+                  padding: '2px',
+                  fontSize: '10px',
+                },
               }}
             >
               SUBSCRIBE NOW

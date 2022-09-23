@@ -15,33 +15,8 @@ export default function Description() {
             their ideas into great projects
           </p>
         </div>
-        {/* <div className={classes.screens}>
-          <div className={classes.smallScreenLeft}>
-            <img
-              className={classes.elementFromLeft}
-              src="/small_left_screen.png"
-              alt=""
-              style={{ opacity: 1, left: '0px' }}
-            />
-          </div>
-          <div className={classes.smallScreenRight}>
-            <img
-              className={classes.elementFromRight}
-              src="/small_right_screen.png"
-              alt=""
-              style={{ opacity: 1, right: '0px' }}
-            />
-          </div>
-          <div className={classes.bigScreen}>
-            <img
-              className={classes.elementFadeIn}
-              src="/big_screen.png"
-              alt=""
-              style={{ opacity: 1, right: '0px' }}
-            />
-          </div>
-        </div> */}
-        <div style={{ display: 'flex' }}>
+
+        <div className={classes.outerContainer}>
           <div className={classes.oneHalfFirst}>
             <div
               style={{
@@ -49,56 +24,90 @@ export default function Description() {
                 marginBottom: '50px',
                 backgroundColor: '#dddddd',
                 borderRadius: '3px 3px 3px 3px',
+                display: 'flex',
               }}
             >
-              <span
+              <div
                 style={{
-                  width: '80%',
-                  height: '35px',
+                  width: '90%',
+
                   backgroundColor: '#222222',
+                  color: '#fff',
+                  textAlign: 'left',
+
+                  padding: '4px 0px 4px 4px',
                 }}
-              ></span>
-              <span
+              >
+                React app development 90%
+              </div>
+              <div
                 style={{
-                  width: '20%',
-                  height: '35px',
+                  width: '10%',
+
                   border: '1px solid #ccc',
                 }}
-              ></span>
+              ></div>
             </div>
+
             <div
               style={{
                 width: '100%',
                 marginBottom: '50px',
-                background: '#dddddd',
+                backgroundColor: '#dddddd',
                 borderRadius: '3px 3px 3px 3px',
+                display: 'flex',
               }}
             >
-              <span
+              <div
                 style={{
-                  width: '80%',
-                  height: '35px',
-                  border: '1px solid #ccc',
+                  width: '90%',
+
                   backgroundColor: '#222222',
+                  color: '#fff',
+                  textAlign: 'left',
+
+                  padding: '4px 0px 4px 4px',
                 }}
-              ></span>
+              >
+                React app development 90%
+              </div>
+              <div
+                style={{
+                  width: '10%',
+                  border: '1px solid #ccc',
+                }}
+              ></div>
             </div>
+
             <div
               style={{
                 width: '100%',
                 marginBottom: '50px',
-                background: '#dddddd',
+                backgroundColor: '#dddddd',
                 borderRadius: '3px 3px 3px 3px',
+                display: 'flex',
               }}
             >
-              <span
+              <div
                 style={{
-                  width: '100%',
-                  height: '35px',
-                  border: '1px solid #ccc',
+                  width: '90%',
+
                   backgroundColor: '#222222',
+                  color: '#fff',
+                  textAlign: 'left',
+
+                  padding: '4px 0px 4px 4px',
                 }}
-              ></span>
+              >
+                React app development 90%
+              </div>
+              <div
+                style={{
+                  width: '10%',
+
+                  border: '1px solid #ccc',
+                }}
+              ></div>
             </div>
           </div>
           <div className={classes.oneLastHalf}>
@@ -108,46 +117,91 @@ export default function Description() {
                 marginBottom: '50px',
                 background: '#dddddd',
                 borderRadius: '3px 3px 3px 3px',
+                display: 'flex',
               }}
             >
-              <span
+              <div
                 style={{
-                  width: '70%',
-                  height: '35px',
-                  border: '1px solid #ccc',
+                  width: '80%',
+
                   backgroundColor: '#222222',
+                  color: '#fff',
+                  textAlign: 'left',
+
+                  padding: '4px 0px 4px 4px',
                 }}
-              ></span>
+              >
+                Application developer 80%
+              </div>
+              <div
+                style={{
+                  width: '20%',
+
+                  border: '1px solid #ccc',
+                }}
+              ></div>
             </div>
+
             <div
               style={{
+                width: '100%',
                 marginBottom: '50px',
                 background: '#dddddd',
                 borderRadius: '3px 3px 3px 3px',
+                display: 'flex',
               }}
             >
-              <span
+              <div
                 style={{
                   width: '80%',
-                  height: '35px',
+
+                  backgroundColor: '#222222',
+                  color: '#fff',
+                  textAlign: 'left',
+
+                  padding: '4px 0px 4px 4px',
+                }}
+              >
+                Application developer 80%
+              </div>
+              <div
+                style={{
+                  width: '20%',
+
                   border: '1px solid #ccc',
                 }}
-              ></span>
+              ></div>
             </div>
+
             <div
               style={{
+                width: '100%',
                 marginBottom: '50px',
                 background: '#dddddd',
                 borderRadius: '3px 3px 3px 3px',
+                display: 'flex',
               }}
             >
-              <span
+              <div
                 style={{
                   width: '80%',
-                  height: '35px',
+
+                  backgroundColor: '#222222',
+                  color: '#fff',
+                  textAlign: 'left',
+
+                  padding: '4px 0px 4px 4px',
+                }}
+              >
+                Application developer 80%
+              </div>
+              <div
+                style={{
+                  width: '20%',
+
                   border: '1px solid #ccc',
                 }}
-              ></span>
+              ></div>
             </div>
           </div>
         </div>

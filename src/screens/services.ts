@@ -3,11 +3,6 @@ import { Theme } from '@mui/material';
 
 export default makeStyles((theme: Theme) =>
   createStyles({
-    container: {
-      width: '80%',
-      margin: '0 auto',
-      padding: '100px 20px',
-    },
     serviceContainer: {
       width: '85%',
       margin: '0 auto',
@@ -34,31 +29,10 @@ export default makeStyles((theme: Theme) =>
       width: '100px',
       marginBottom: '40px',
     },
-    avatarContainer: {
-      display: 'flex',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-      [theme.breakpoints.down('md')]: {
-        flexDirection: 'column',
-      },
-    },
-
-    imageContainer: {
-      width: '28%',
-      height: 'auto',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      [theme.breakpoints.down('md')]: {
-        marginTop: '20px',
-        width: '40%',
-      },
-    },
 
     serviceParaContainer: {
       display: 'flex',
       justifyContent: 'space-between',
-      //   alignItems: 'center',
       margin: '15px 0px',
     },
 
@@ -86,6 +60,23 @@ export default makeStyles((theme: Theme) =>
       fontSize: '14px',
       fontFamily: 'Open sans, sans-serif',
       marginTop: '0px',
+    },
+
+    outerContainer: {
+      display: 'flex',
+      justifyContent: 'space-around',
+      alignItems: 'center',
+      [theme.breakpoints.down('md')]: {
+        flexWrap: 'wrap',
+      },
+    },
+    leftInnerContainer: {
+      marginBottom: '20px',
+      marginRight: '4%',
+      position: 'relative',
+      width: '45%',
+      display: 'flex',
+      flexDirection: 'column',
     },
   })
 );

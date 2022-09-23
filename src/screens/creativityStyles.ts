@@ -1,6 +1,7 @@
 import { makeStyles, createStyles } from '@mui/styles';
+import { Theme } from '@mui/material';
 
-export default makeStyles(() =>
+export default makeStyles((theme: Theme) =>
   createStyles({
     container: {
       backgroundImage: 'url(separator2.jpg)',
@@ -10,7 +11,6 @@ export default makeStyles(() =>
       backgroundSize: 'cover',
       backgroundAttachment: 'fixed !important',
       width: '100%',
-      height: '100%',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -29,6 +29,14 @@ export default makeStyles(() =>
 
       margin: '0 auto',
       padding: '30px 0 10px',
+      [theme.breakpoints.down('md')]: {
+        fontSize: '36px',
+      },
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '28px',
+        width: '80%',
+        padding: '18px 0 7px',
+      },
     },
     authorName: {
       fontSize: '14px',

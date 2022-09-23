@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './teamDescStyles';
+import styles from './services';
 
 export default function Services() {
   const classes = styles();
@@ -16,54 +16,13 @@ export default function Services() {
               remember.
             </p>
           </div>
-          {/* <div className={classes.avatarContainer}>
-            <div className={classes.imageContainer}>
-              <div style={{ borderRadius: '3px', position: 'relative' }}></div>
-              <img src="./team1.png" alt="team1" />
-              <span style={{ color: '#222222', marginTop: '10px' }}>
-                MICHEAL BROAD
-              </span>
-              <p>CEO Founder</p>
-            </div>
-            <div className={classes.imageContainer}>
-              <div style={{ borderRadius: '3px', position: 'relative' }}></div>
-              <img src="./team2.png" alt="team1" />
-              <span style={{ color: '#222222', marginTop: '10px' }}>
-                AMANDA WHITE
-              </span>
-              <p>Web Designer</p>
-            </div>
-            <div className={classes.imageContainer}>
-              <div style={{ borderRadius: '3px', position: 'relative' }}></div>
-              <img src="./team3.png" alt="team1" />
-              <span style={{ color: '#222222', marginTop: '10px' }}>
-                BRAD TRAVERSY
-              </span>
-              <p>Developer</p>
-            </div>
-          </div> */}
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-around',
-              alignItems: 'center',
-            }}
-          >
-            <div
-              style={{
-                marginBottom: '20px',
-                marginRight: '4%',
-                position: 'relative',
-                width: '45%',
-                display: 'flex',
-                flexDirection: 'column',
-              }}
-            >
+
+          <div className={classes.outerContainer}>
+            <div className={classes.leftInnerContainer}>
               <div
                 style={{
                   display: 'flex',
                   justifyContent: 'space-between',
-                  //   alignItems: 'center',
                   margin: '15px 0px',
                 }}
               >
@@ -86,7 +45,6 @@ export default function Services() {
                 </div>
                 <div
                   style={{
-                    // backgroundImage: 'url(/user-profile.png)',
                     height: '40px',
                     width: '40px',
                     marginLeft: '20px',
@@ -95,7 +53,6 @@ export default function Services() {
                 >
                   <img
                     style={{
-                      // backgroundImage: 'url(/user-profile.png)',
                       height: '40px',
                       width: '40px',
                     }}
@@ -134,7 +91,6 @@ export default function Services() {
                 </div>
                 <div
                   style={{
-                    // backgroundImage: 'url(/user-profile.png)',
                     height: '40px',
                     width: '40px',
                     marginLeft: '20px',
@@ -143,7 +99,6 @@ export default function Services() {
                 >
                   <img
                     style={{
-                      // backgroundImage: 'url(/user-profile.png)',
                       height: '40px',
                       width: '40px',
                     }}
@@ -182,7 +137,6 @@ export default function Services() {
                 </div>
                 <div
                   style={{
-                    // backgroundImage: 'url(/user-profile.png)',
                     height: '40px',
                     width: '40px',
                     marginLeft: '20px',
@@ -191,7 +145,6 @@ export default function Services() {
                 >
                   <img
                     style={{
-                      // backgroundImage: 'url(/user-profile.png)',
                       height: '40px',
                       width: '40px',
                     }}
@@ -215,7 +168,6 @@ export default function Services() {
               <div className={classes.serviceParaContainer}>
                 <div
                   style={{
-                    // backgroundImage: 'url(/user-profile.png)',
                     height: '40px',
                     width: '40px',
                     marginRight: '20px',
@@ -224,7 +176,6 @@ export default function Services() {
                 >
                   <img
                     style={{
-                      // backgroundImage: 'url(/user-profile.png)',
                       height: '40px',
                       width: '40px',
                     }}
@@ -247,7 +198,6 @@ export default function Services() {
               <div className={classes.serviceParaContainer}>
                 <div
                   style={{
-                    // backgroundImage: 'url(/user-profile.png)',
                     height: '40px',
                     width: '40px',
                     marginRight: '20px',
@@ -256,7 +206,6 @@ export default function Services() {
                 >
                   <img
                     style={{
-                      // backgroundImage: 'url(/user-profile.png)',
                       height: '40px',
                       width: '40px',
                     }}
@@ -273,13 +222,6 @@ export default function Services() {
                     branding. Our design team will help you create it
                   </p>
                 </div>
-                {/* <div
-                  style={{
-                    backgroundImage: 'url(/logo512.png)',
-                    height: '40px',
-                    width: '40px',
-                  }}
-                ></div> */}
               </div>
 
               {/* this is 3rd div */}
@@ -287,7 +229,6 @@ export default function Services() {
               <div className={classes.serviceParaContainer}>
                 <div
                   style={{
-                    // backgroundImage: 'url(/user-profile.png)',
                     height: '40px',
                     width: '40px',
                     marginRight: '20px',
@@ -296,7 +237,6 @@ export default function Services() {
                 >
                   <img
                     style={{
-                      // backgroundImage: 'url(/user-profile.png)',
                       height: '40px',
                       width: '40px',
                     }}
@@ -313,23 +253,6 @@ export default function Services() {
                     branding. Our design team will help you create it
                   </p>
                 </div>
-                {/* <div
-                  style={{
-                    // backgroundImage: 'url(/user-profile.png)',
-                    height: '40px',
-                    width: '40px',
-                  }}
-                >
-                  <img
-                    style={{
-                      // backgroundImage: 'url(/user-profile.png)',
-                      height: '40px',
-                      width: '40px',
-                    }}
-                    src="/user-profile.png"
-                    alt="image"
-                  />
-                </div> */}
               </div>
             </div>
             {/* end of 2nd half */}

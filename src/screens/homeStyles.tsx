@@ -1,6 +1,7 @@
 import { makeStyles, createStyles } from '@mui/styles';
+import { Theme } from '@mui/material';
 
-export default makeStyles(() =>
+export default makeStyles((theme: Theme) =>
   createStyles({
     mainContainer: {
       width: '100vw',
@@ -43,6 +44,9 @@ export default makeStyles(() =>
       fontFamily: 'Montserif, sans-serif',
       fontSize: '70px',
       textTransform: 'uppercase',
+      [theme.breakpoints.down('md')]: {
+        fontSize: '48px',
+      },
     },
     bullet: {
       margin: '-10px 10px 0 10px',

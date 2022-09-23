@@ -1,6 +1,7 @@
 import { makeStyles, createStyles } from '@mui/styles';
+import { Theme } from '@mui/material';
 
-export default makeStyles(() =>
+export default makeStyles((theme: Theme) =>
   createStyles({
     mainContainer: {
       width: '100vw',
@@ -12,12 +13,15 @@ export default makeStyles(() =>
       height: '65%',
     },
     container: {
-      width: '20%',
-      // display: 'flex',
+      width: '25%',
       margin: '0 auto',
       marginTop: '50px',
-
-      // flexDi
+      [theme.breakpoints.down('md')]: {
+        width: '25%',
+      },
+      [theme.breakpoints.down('sm')]: {
+        width: '40%',
+      },
     },
     socialMediaContainer: {
       display: 'flex',
@@ -29,6 +33,14 @@ export default makeStyles(() =>
     socialImageContainer: {
       width: '60px',
       height: '60px',
+      [theme.breakpoints.down('md')]: {
+        width: '40px',
+        height: '40px',
+      },
+      [theme.breakpoints.down('sm')]: {
+        width: '25px',
+        height: '25px',
+      },
     },
 
     authorName: {

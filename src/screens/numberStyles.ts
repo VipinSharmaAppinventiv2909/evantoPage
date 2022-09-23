@@ -1,9 +1,9 @@
 import { makeStyles, createStyles } from '@mui/styles';
+import { Theme } from '@mui/material';
 
-export default makeStyles(() =>
+export default makeStyles((theme: Theme) =>
   createStyles({
     mainContainer: {
-      height: '65vh',
       width: '100vw',
     },
     container: {
@@ -26,24 +26,52 @@ export default makeStyles(() =>
       height: '70px',
       marginBottom: '40px',
       marginTop: '60px',
+      [theme.breakpoints.down('md')]: {
+        width: '50px',
+        height: '50px',
+        marginBottom: '30px !important',
+        marginTop: '45px !important',
+      },
+
+      [theme.breakpoints.down('sm')]: {
+        width: '35px',
+        height: '35px',
+        marginBottom: '24px !important',
+        marginTop: '32px !important',
+      },
     },
     numberContainer: {
       color: '#ffffff',
-      //   fontSize: '48px',
-      //   width: '70%',
       fontFamily: `"Montserrat", "sans-serrif"`,
       margin: '0 auto',
-      //   padding: '100px 20px',
       padding: '10px 20px',
       borderRadius: '3px',
       marginBottom: '30px',
-      //   background: '#ffffff',
-      //   opacity: '0.1',
       backgroundColor: '#ffffff26',
       width: '30%',
       textAlign: 'center',
       fontSize: '72px',
       lineHeight: '72px',
+      [theme.breakpoints.down('lg')]: {
+        fontSize: '64px',
+        lineHeight: '64px',
+        width: '40%',
+      },
+      [theme.breakpoints.up('md')]: {
+        fontSize: '56px',
+        lineHeight: '56px',
+        width: '40%',
+      },
+      [theme.breakpoints.down('md')]: {
+        fontSize: '48px',
+        lineHeight: '48px',
+        width: '45%',
+      },
+      [theme.breakpoints.down('md')]: {
+        fontSize: '32px',
+        lineHeight: '32px',
+        width: '50%',
+      },
     },
     numberStyle: {
       color: '#ffffff',
@@ -63,14 +91,11 @@ export default makeStyles(() =>
     authorName: {
       fontSize: '14px',
       color: '#999999',
-      marginTop: '-4px',
+      marginTop: '4px',
       textAlign: 'center',
     },
     imageTextContainer: {
       marginTop: '40px',
-      //   display: 'flex',
-      //   flexDirection: 'column',
-      //   marginBottom: '30px',
     },
   })
 );

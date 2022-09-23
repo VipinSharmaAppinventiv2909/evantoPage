@@ -1,7 +1,7 @@
-import { autocompleteClasses } from '@mui/material';
 import { makeStyles, createStyles } from '@mui/styles';
+import { Theme } from '@mui/material';
 
-export default makeStyles(() =>
+export default makeStyles((theme: Theme) =>
   createStyles({
     navbarInner: {
       minHeight: '45px',
@@ -30,8 +30,7 @@ export default makeStyles(() =>
     },
     container: {
       width: '80%',
-      //   marginLeft: '15%',
-      //   marginRight: '15%',
+
       margin: '0 auto',
       padding: '100px 20px',
     },
@@ -40,10 +39,7 @@ export default makeStyles(() =>
       width: '55%',
       margin: '0 auto',
       marginBottom: '60px',
-      //   letterSpacing: '1.5',
-      //   color: '#999999',
-      //   opacity: '0.9',
-      //   fontWeight: 'light',
+
       '& h1': {
         fontSize: '36px',
         letterSpacing: '3px',
@@ -61,41 +57,73 @@ export default makeStyles(() =>
       marginBottom: '40px',
     },
     screens: {
-      position: 'relative',
+      [theme.breakpoints.up('md')]: {
+        position: 'relative',
+      },
+
+      [theme.breakpoints.down('md')]: {
+        display: 'flex',
+        flexDirection: 'column',
+      },
     },
     smallScreenLeft: {
       width: '150px',
-      height: 'auto',
-      position: 'absolute',
-      //   left: 0,
-      //   top: '120px',
+      height: '150px',
+
+      [theme.breakpoints.down('md')]: {
+        marginLeft: '4%',
+      },
+
       zIndex: 0,
+      [theme.breakpoints.up('md')]: {
+        position: 'absolute',
+      },
     },
     smallScreenRight: {
       width: '150px',
-      height: 'auto',
-      position: 'absolute',
-      right: '350px',
-      //   top: '120px',
+      height: '150px',
+
+      right: '440px',
+
       zIndex: 0,
+      [theme.breakpoints.up('md')]: {
+        position: 'absolute',
+      },
+
+      [theme.breakpoints.down('md')]: {
+        marginTop: '350px',
+        marginLeft: '4%',
+      },
     },
     bigScreen: {
       width: '600px',
       height: 'auto',
       margin: '0 auto',
       zIndex: 100,
+
+      [theme.breakpoints.down('md')]: {
+        marginTop: '350px',
+      },
     },
     elementFromRight: {
       paddingLeft: '0px',
-      position: 'relative',
+
+      [theme.breakpoints.up('md')]: {
+        position: 'relative',
+      },
     },
     elementFromLeft: {
       paddingRight: '0px',
-      position: 'relative',
+
+      [theme.breakpoints.up('md')]: {
+        position: 'relative',
+      },
     },
     elementFadeIn: {
-      position: 'relative',
       paddingLeft: '0px',
+      [theme.breakpoints.up('md')]: {
+        position: 'relative',
+      },
     },
     oneHalfFirst: {
       float: 'left',
@@ -105,6 +133,13 @@ export default makeStyles(() =>
       width: '48%',
       display: 'flex',
       flexDirection: 'column',
+      [theme.breakpoints.down('md')]: {
+        width: '75%',
+        marginRight: '0%',
+      },
+      [theme.breakpoints.down('sm')]: {
+        width: '90%',
+      },
     },
     oneLastHalf: {
       float: 'left',
@@ -113,6 +148,22 @@ export default makeStyles(() =>
       width: '48%',
       display: 'flex',
       flexDirection: 'column',
+
+      [theme.breakpoints.down('md')]: {
+        width: '75%',
+      },
+      [theme.breakpoints.down('sm')]: {
+        width: '90%',
+      },
+    },
+
+    outerContainer: {
+      display: 'flex',
+      [theme.breakpoints.down('md')]: {
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
     },
   })
 );

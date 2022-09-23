@@ -16,10 +16,10 @@ export default function Clients() {
             </p>
           </div>
           <div className={classes.imageContainer}>
-            <img src="/client1.png" />
-            <img src="/client2.png" />
-            <img src="/client3.png" />
-            <img src="/client4.png" />
+            <img className={classes.imageStyle} src="/client1.png" />
+            <img className={classes.imageStyle} src="/client2.png" />
+            <img className={classes.imageStyle} src="/client3.png" />
+            <img className={classes.imageStyle} src="/client4.png" />
           </div>
           <div className={classes.thanksHeading}>
             "THANK YOU FOR YOUR AWESOME TEMPLATE. SUCH A JOY TO LAUNCH OUR FIRST

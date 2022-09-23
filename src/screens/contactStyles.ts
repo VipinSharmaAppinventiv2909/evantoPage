@@ -1,15 +1,21 @@
 import { makeStyles, createStyles } from '@mui/styles';
+import { Theme } from '@mui/material';
 
-export default makeStyles(() =>
+export default makeStyles((theme: Theme) =>
   createStyles({
     mainContainer: {
       width: '100vw',
-      height: '100vh',
     },
     container: {
       width: '80%',
       margin: '0 auto',
       padding: '100px 20px',
+      [theme.breakpoints.down('md')]: {
+        padding: '80px 16px',
+      },
+      [theme.breakpoints.down('sm')]: {
+        padding: '60px 12px',
+      },
     },
     sectionTitle: {
       textAlign: 'center',
@@ -35,6 +41,12 @@ export default makeStyles(() =>
       fontSize: '14px',
       color: '#999999',
       marginTop: '50px',
+      [theme.breakpoints.down('md')]: {
+        marginTop: '35px',
+      },
+      [theme.breakpoints.down('sm')]: {
+        marginTop: '20px',
+      },
     },
 
     inputBoxContainer: {
@@ -44,6 +56,13 @@ export default makeStyles(() =>
       width: '70%',
       margin: '0 auto',
       marginTop: '-30px',
+      [theme.breakpoints.down('md')]: {
+        marginTop: '-50px',
+      },
+      [theme.breakpoints.down('sm')]: {
+        marginTop: '-70px',
+        flexDirection: 'column',
+      },
     },
 
     leftInputContainer: {
@@ -74,8 +93,9 @@ export default makeStyles(() =>
       background: '#222222',
       color: '#ffffff',
       margin: '0 auto',
-      marginTop: '40px',
+      marginTop: '20px',
       borderRadius: '4px',
+      marginBottom: '40px',
     },
   })
 );
